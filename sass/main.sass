@@ -1,0 +1,309 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700|Rokkitt:400,500,700');
+@import url('../fonts/MyriadPro/MyriadPro-Cond.ttf');
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	background-color: #fff
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: #2cc7c1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: left
+
+b, strong
+	font-weight: bold
+
+p
+	font-weight: bold
+
+/*Начало 1 секции header class="header"*/
+
+.header 
+	height: 800px
+	background-image: url(../img/bg-header.jpg)
+	background-size: cover
+	background-position: center
+	padding-top: 100px
+	position: relative
+	outline: 0px solid blue
+	margin-bottom: 120px
+	opacity: 0.8
+	nav
+		text-align: right
+		ul
+			list-style-type: none
+			padding: 0
+			margin: 0
+			li
+				display: inline-block
+				a
+					font-family: Myriad Pro
+					outline: 0px solid yellow
+					text-transform: uppercase
+					margin-right: 30px
+					color: #fff
+					font-size: 20px
+					font-weight: 400
+					&:hover
+						text-decoration: underline
+						color: $accent
+	.top-block
+		font-size: 24px
+		p
+			text-transform: uppercase
+			color: #fff
+			font-family: MyriadPro-Cond
+			font-size: 20px
+			font-weight: 400
+	.text-center
+		color: #fff
+		text-align: center
+		margin-top: 200px
+		outline: 0px solid yellow
+		h1
+			font-family: Rokkitt, sans-serif
+			font-weight: 400
+			font-size: 60px
+			border-bottom: 1px solid #fff
+			display: inline-block
+			padding: 0px 30px
+		p
+			font-size: 30px
+			font-weight: 400
+	.button
+		/*background-color: $accent*/
+		color: #fff
+		font-size: 20px
+		padding: 5px 40px
+		display: inline-block
+		/*border: 60px solid rgba(193, 0, 32, 0.5)*/
+		/*transform: translate(-50%, -50%)*/
+	.opacity
+		position: absolute
+		bottom: -20px
+		left: 50%
+		background-color: $accent
+		box-shadow: 0px 0px 0px 6px rgba(231,76,60,0.59)
+		/*border: 60px solid rgba(193, 0, 32, 0.1)*/
+		transform: translate(-50%)
+		display: inline-block
+
+/* Конец 1 секции header class="header" */
+
+/* Начало 2 section class="first" */
+
+.first__block
+		margin-bottom: 50px
+		text-align: center
+		h2
+			color: #e74c3c
+			font-size: 30px
+			margin-bottom: 50px
+		p
+			color: $accent1
+.second__block
+	margin-bottom: 130px
+	outline: 0px solid blue
+	text-align: center
+	img
+		padding-bottom: 30px
+	h3
+		text-align: center
+		font-weight: bold
+		font-size: 18px
+		color: #e74c3c
+		padding-bottom: 30px
+	p
+		/*padding: 0 35px 0 20px*/
+		line-height: 2.0
+		font-weight: 500
+		text-align: justify
+		font-size: 15px
+		color: #95a5a6
+.middle
+	padding: 0 45px
+
+
+/* Конец 2 section class="first" */
+
+/* Начало 3 section class="gallery__img" */
+
+.gallery
+	.img1
+		position: relative
+		outline: 0px solid black
+		margin-bottom: 200px
+		height: 300px
+		width: 40%
+		background-size: cover
+		margin-bottom: 80px
+		opacity: 0.59
+		&:hover
+			box-shadow: 0 0 16px rgba(0, 0, 0, .5)
+			opacity: 1
+		&:nth-child(odd)
+			float: left
+		&:nth-child(even)
+			float: right
+	.transparent
+		.fa
+			position: absolute
+			top: 15px
+			right: 15px
+			padding: 12px
+			background-color: #e74c3c
+			font-size: 25px
+			color: #fff
+			transform: rotate(90deg)
+			box-shadow: 0px 0px 0px 6px rgba(231,76,60,0.59)
+			&:hover
+				cursor: pointer
+		.two-descr
+			color: #fff
+			width: 100%
+			position: absolute
+			outline: 0px solid green
+			left: 0
+			bottom: 0
+			background-color: #e74c3c
+			.Large
+				box-shadow: 0px -6px 0px 0px rgba(231,76,60,0.59)
+				font-size: 30px
+				padding-left: 20px
+				margin: 0
+			.Small
+				font-size: 15px
+				padding-left: 20px
+				padding-bottom: 10px
+				color: #9d3b31
+				margin: 0
+	.img1
+		.transparent
+			display: none
+		&:hover
+			.transparent
+				display: block
+	.gallery-button
+		margin-bottom: 150px
+		text-align: center
+		outline: 0px solid black
+		a
+			padding: 15px 35px
+			background-color: #e74c3c
+			color: #fff
+			text-transform: uppercase
+			font-size: 20px
+		.fa-arrow-right
+			padding-left: 10px
+			font-size: 25px
+
+/* Конец 3 section class="gallery__img" */
+
+/* Начало 4 section class="last" */
+
+.form-section
+	text-align: center
+	margin-bottom: 200px
+	h2
+		outline: 0px solid blue
+		font-size: 40px
+		color: #e74c3c
+		margin-bottom: 40px
+	input, textarea
+		border: 2px solid transparent
+		font-size: 20px
+		background-color: #e4e8e8
+		outline: 0px solid blue
+		border-radius: 2px
+		&::placeholder
+			color: #cecece
+			opacity: 1
+	input
+		padding: 15px 0px 15px 30px
+		width: 100%
+	textarea
+		padding: 15px 0px 15px 30px
+		height: 300px
+		width: 100%
+		margin-top: 20px
+		resize: none
+		overflow-x: hidden	
+	textarea, input
+		&:focus:required:invalid
+			border: 2px solid red
+			outline: none
+		&:required:valid
+			border: 2px solid #2cc7c1
+			outline: none
+/* Конец 4 section class="last" */
+
+/* Начало 5 footer class="footer" */
+
+.footer
+	padding-bottom: 60px
+	/*max-width: 930px*/
+	outline: 0px solid yellow
+	background-color: #e74c3c
+	.text-center
+		text-align: center
+	.fa
+		margin-top: -25px
+		margin-bottom: 100px
+		outline: 0px solid black
+		font-size: 48px
+		padding: 20px 25px
+		background-color: #fff
+		color: #e74c3c
+		box-shadow: 0px 0px 0px 6px rgba(231,76,60,0.59)
+		&:first-child
+			margin-left: 5px
+			float: left
+		&:last-child
+			margin-right: 5px
+			float: right
+	.fa-facebook
+		outline: 0px solid yellow
+		font-size: 40px
+		padding: 24px 30px
+	p
+		font-family: Rokkitt
+		color: #fff
+		font-size: 25px
+		display: inline-block
+		&:first-child
+			float: left
+		&:last-child
+			float: right
+
+
+/* Конец 5 footer class="footer" */
+
+@import "media" // Always at the end
